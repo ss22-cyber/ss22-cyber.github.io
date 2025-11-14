@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dummy's R Us - Job Application</title>
+
+    <!-- Basic Inline CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, nav, section, article, aside, footer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #f3f3f3;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Dummy's R Us</h1>
+        <p>Your future starts here!</p>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <a href="#application">Application Form</a> |
+        <a href="#about">About Us</a> |
+        <a href="#quote">Quote</a>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <section id="application">
+        <h2>Job Application Form</h2>
+
+        <!-- MOTIVATIONAL QUOTE -->
+        <blockquote id="quote">
+            "Success usually comes to those who are too busy to be looking for it."
+        </blockquote>
+
+        <!-- FORM START -->
+        <form action="/submit" method="POST" autocomplete="on" aria-label="Job Application Form">
+
+            <!-- FULL NAME -->
+            <div class="form-group highlight">
+                <label>Full Name:</label><br>
+                <input type="text" 
+                       name="fullname" 
+                       placeholder="Enter your full name"
+                       required 
+                       minlength="3" 
+                       maxlength="40">
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group highlight">
+                <label>Email:</label><br>
+                <input type="text" 
+                       name="email"
+                       placeholder="example@domain.com"
+                       required
+                       pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+
+            <!-- PASSWORD FIELD -->
+            <div class="form-group highlight">
+                <label>Create Password:</label><br>
+                <input type="password" 
+                       name="password" 
+                       required>
+            </div>
+
+            <!-- YEARS OF EXPERIENCE -->
+            <div class="form-group highlight">
+                <label>Years of Experience:</label><br>
+                <input type="number" 
+                       name="experience" 
+                       min="0" 
+                       max="40">
+            </div>
+
+            <!-- RANGE SLIDER -->
+            <div class="form-group highlight">
+                <label>Expected Salary Range:</label><br>
+                <input type="range" 
+                       name="salary" 
+                       min="30000" 
+                       max="150000" 
+                       step="1000">
+            </div>
+
+            <!-- CHECKBOXES -->
+            <div class="form-group highlight">
+                <label>Job Preferences (check all that apply):</label><br>
+                <input type="checkbox" name="pref_remote"> Remote<br>
+                <input type="checkbox" name="pref_fulltime"> Full Time<br>
+                <input type="checkbox" name="pref_parttime"> Part Time
+            </div>
+
+            <!-- RADIO BUTTONS -->
+            <div class="form-group highlight">
+                <label>Job Type:</label><br>
+                <input type="radio" name="jobtype" value="fulltime"> Full-Time<br>
+                <input type="radio" name="jobtype" value="parttime"> Part-Time
+            </div>
+
+            <!-- DROPDOWN MENU -->
+            <div class="form-group highlight">
+                <label>Select Position:</label><br>
+                <select name="position">
+                    <option>Customer Support</option>
+                    <option>Warehouse Assistant</option>
+                    <option>Product Tester</option>
+                    <option>Manager</option>
+                </select>
+            </div>
+
+            <!-- DATALIST -->
+            <div class="form-group highlight">
+                <label>Preferred City:</label><br>
+                <input list="cities" name="city">
+                <datalist id="cities">
+                    <option value="New York">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                    <option value="Houston">
+                </datalist>
+            </div>
+
+            <!-- TEXTAREA -->
+            <div class="form-group highlight">
+                <label>Cover Letter:</label><br>
+                <textarea name="coverletter" rows="4" cols="40" placeholder="Write your message..."></textarea>
+            </div>
+
+            <!-- READONLY INPUT -->
+            <div class="form-group">
+                <label>Application ID (Readonly):</label><br>
+                <input type="text" value="APP-00123" readonly>
+            </div>
+
+            <!-- DISABLED INPUT -->
+            <div class="form-group">
+                <label>Promo Code (Disabled):</label><br>
+                <input type="text" value="Not Available" disabled>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- ARTICLE -->
+    <article id="about">
+        <h2>About Dummy's R Us</h2>
+        <p>We hire imaginative, creative, and driven people to join our toy-making team.</p>
+
+        <h3>Contact Us</h3>
+        <p>Dummy’s R Us<br>
+        📞 (555) 123-4567<br>
+        📧 info@dummysrus.com</p>
+    </article>
+
+    <!-- ASIDE WITH EMBEDDED IMAGE -->
+    <aside>
+        <h3>Company Logo</h3>
+        <embed src="dummys-r-us-logo.png" width="300" height="300">
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Dummy's R Us</p>
+    </footer>
+
+</body>
+</html>
