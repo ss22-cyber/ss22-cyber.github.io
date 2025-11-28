@@ -1,0 +1,218 @@
+/* ===============================
+   RESET DEFAULTS
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E7; 
+    color: #1A1A1A; 
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   COMMON LAYOUT BLOCKS
+   =============================== */
+header, nav, section, article, aside, footer {
+    background-color: #FFFBE7; 
+    border: 2px solid #1A1A1A; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+header {
+    background: linear-gradient(135deg, #FFF4D1, #FFFBE7); 
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #F4B400; 
+    text-shadow: 2px 2px 0 #1A1A1A;
+}
+
+header p {
+    color: #6B3E1E;
+    font-weight: bold;
+}
+
+/* ===============================
+   NAVIGATION
+   =============================== */
+nav {
+    background-color: #FFEAA7; 
+    text-align: center;
+    font-weight: bold;
+    border-color: #F4B400;
+}
+
+nav a {
+    color: #1A1A1A;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #B23A2E; 
+}
+
+nav a:visited {
+    color: #6B3E1E;
+}
+
+nav a:active {
+    opacity: 0.7;
+}
+
+/* ===============================
+   FORM SECTION
+   =============================== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #FFF4D1; 
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #6B3E1E; 
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 2px solid #1A1A1A;
+    font-size: 16px;
+    background-color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #F4B400; 
+    outline: none;
+    background-color: #FFFBE7;
+}
+
+input:disabled {
+    background-color: #eee;
+    opacity: 0.6;
+}
+
+input[type="text"][name="email"] {
+    background-color: #FFF8DA;
+}
+
+input[readonly] {
+    background-color: #F5D7B2; 
+    color: #1A1A1A;
+}
+
+input[type="submit"] {
+    background-color: #B23A2E !important;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #892E24;
+}
+
+/* ===============================
+   QUOTE
+   =============================== */
+#quote {
+    background-color: #FFF4D1;
+    padding: 12px;
+    border-left: 5px solid #F4B400;
+    font-style: italic;
+}
+
+/* ===============================
+   ARTICLE & ASIDE
+   =============================== */
+article {
+    background-color: #FFFBE7;
+}
+
+aside {
+    text-align: center; 
+}
+
+aside h3 {
+    color: #1A1A1A;
+}
+
+aside img {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #1A1A1A;
+    border-radius: 12px;
+    background-color: #FFFBE7;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #6B3E1E;
+}
+
+/* ===============================
+   BOX MODEL DEMO
+   =============================== */
+form {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 10px 5px;
+    padding: 15px;
+}
+
+.hidden-example {
+    visibility: hidden;
+}
+
+/* Multiple class selector */
+.green.bold {
+    color: green;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        font-size: 14px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
