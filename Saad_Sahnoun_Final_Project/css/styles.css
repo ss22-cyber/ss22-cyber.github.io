@@ -1,0 +1,187 @@
+/* ========================================================
+   General Body & Typography
+   ======================================================== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa; 
+}
+
+/* ========================================================
+   Section Spacing
+   ======================================================== */
+section {
+  padding-top: 80px; 
+  padding-bottom: 80px;
+  scroll-margin-top: 70px; 
+}
+
+/* ========================================================
+   Hero Section
+   ======================================================== */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("../images/hero.jpg") center/cover no-repeat;
+
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+#hero p {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+#hero .btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../images/hero.jpg") center/cover no-repeat;
+
+  color: #fff;
+
+  image-rendering: -webkit-optimize-contrast;
+}
+#hero {
+  animation: heroFade 1.2s ease-in;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* ========================================================
+   Navbar
+   ======================================================== */
+.navbar {
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important; 
+  font-weight: 600;
+}
+
+/* ========================================================
+   Cards & Projects
+   ======================================================== */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ========================================================
+   Skills / Progress Bars
+   ======================================================== */
+.progress {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  font-weight: 600;
+  color: #fff;
+  line-height: 20px;
+}
+
+/* ========================================================
+   Contact Form
+   ======================================================== */
+form input,
+form textarea {
+  border-radius: 8px;
+}
+
+form button {
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ========================================================
+   Footer
+   ======================================================== */
+footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #f8f9fa;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+/* ========================================================
+   Utility Classes 
+   ======================================================== */
+.text-primary {
+  color: #0d6efd !important;
+}
+
+.bg-light-custom {
+  background-color: #f1f3f5 !important;
+}
+
+.shadow-custom {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
